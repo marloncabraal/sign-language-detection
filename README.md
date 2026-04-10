@@ -17,14 +17,17 @@ At inference time, the webcam feed is processed live and predictions are overlai
 
 After training, the terminal displays the accuracy and the cunfusion matrix for each class.
 
-Project structure
+## Project structure
+
+```
 sign-language-detection/
-├── utils.py             # MediaPipe helpers, constants (ACTIONS, SEQUENCE_LENGTH, NUM_FEATURES)
+├── utils.py             # MediaPipe helpers, constants
 ├── collect_data.py      # Records training sequences from your webcam
 ├── train_model.py       # Trains the LSTM and saves action.keras
 ├── realtime_detect.py   # Runs live detection using the trained model
 ├── requirements.txt
 └── action.keras         # Pre-trained model (included)
+```
 
 Setup
 
